@@ -1,0 +1,9 @@
+<canvas
+    #grid
+    [height]="height + 1"
+    [width]="width + 1"
+    (mousedown)="paintCell()"
+    (mouseenter)="onEvent($event)"
+    (mouseleave)="onEvent($event)"
+    (mousemove)="getCoords($event)"
+></canvas>
